@@ -35,6 +35,14 @@ The possibilities are endless. Get creative with the GStreamer pipeline to do so
 with the deep learning models out there to detect all kinds of things. And get creative with how you can leverage the browser
 to visualize your stream instead of HLS or some expensive media server.
 
+### Documentation
+
+Here are some direct links to documentation for building, running, and using OpenCV, GStreamer, and JSMPEG:
+
+- [GStreamer avenc_mpeg1video plugin](https://gstreamer.freedesktop.org/documentation/libav/avenc_mpeg1video.html?gi-language=c#avenc_mpeg1video-page)
+- [Build OpenCV On Linux](https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html)
+- [JSMPEG Library](https://github.com/phoboslab/jsmpeg)
+
 ## Install, Build, and Run
 
 Need to install OpenCV and GStreamer packages. Here is how I did it on Ubuntu 20.04:
