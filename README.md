@@ -5,6 +5,29 @@ In addition, the output pipeline is formatted to be compatible with MPEG1 encodi
 for use with the [jsmpeg](https://github.com/phoboslab/jsmpeg) library. If you run a
 websocket server, you will be able to visualize this stream in a web browser.
 
+```
+    +-----------------------------+   
+    | GStreamer Input from Camera |   
+    +-------------+---------------+   
+                  |                   
+     +------------v-------------+     
+     | OpenCV Processing in C++ |     
+     +------------+-------------+     
+                  |                   
++-----------------v------------------+
+| GStreamer Output to MPEG1 over UDP |
++-----------------+------------------+
+                  |                   
+     +------------v-------------+     
+     | UDP to Web Socket Server |     
+     +------------+-------------+     
+                  |                   
+    +-------------v-------------+     
+    | JSMPEG in Browser to View |     
+    +---------------------------+ 
+```
+
+
 ## Why?
 
 Several major benefits of using this setup:
